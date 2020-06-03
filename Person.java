@@ -1,77 +1,49 @@
+
 public class Person {
-	private String name;
-	private int salary;
-	private String emailAddress;
-	private String department;
-	private String dob;
+	private String fName;
+	private String lName;
+	private String mName;
+	private String gender;
+	private String age;
 
-	public Person(String name, int salary, String emailAddress, String department, String dob) {
-		this.name = name;
-		this.salary = salary;
-		this.emailAddress = emailAddress;
-		this.department = department;
-		this.dob = dob;
+	public String getfName() {
+		return fName;
 	}
 
-	public Person(String name, String emailAddress, String dob) {
-		this.name = name;
-		this.emailAddress = emailAddress;
-		this.dob = dob;
+	public void setfName(String fName) {
+		this.fName = fName;
 	}
 
-	public Person(String name, String emailAddress, String department, String dob) {
-		this.name = name;
-		this.emailAddress = emailAddress;
-		this.department = department;
-		this.dob = dob;
-		this.salary = 4000;
+	public String getlName() {
+		return lName;
 	}
 
-	public Person() {
+	public void setlName(String lName) {
+		this.lName = lName;
 	}
 
-	public String getName() {
-		return name;
+	public String getmName() {
+		return mName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setmName(String mName) {
+		this.mName = mName;
 	}
 
-	public int getSalary() {
-		return salary;
+	public String getGender() {
+		return gender;
 	}
 
-	public void setSalary(int salary) {
-		if(salary<0) {
-			this.salary = 0;
-		}else {
-			this.salary = salary;
-		}
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
-	public String getEmailAddress() {
-		return emailAddress;
+	public String getAge() {
+		return age;
 	}
 
-	public void setEmailAddress(String emailAddress) {
-		this.emailAddress = emailAddress;
-	}
-
-	public String getDepartment() {
-		return department;
-	}
-
-	public void setDepartment(String department) {
-		this.department = department;
-	}
-
-	public String getDob() {
-		return dob;
-	}
-
-	public void setDob(String dob) {
-		this.dob = dob;
+	public void setAge(String age) {
+		this.age = age;
 	}
 
 }
