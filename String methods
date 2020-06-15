@@ -1,0 +1,18 @@
+public class StringMethods {
+	public static void main(String[] args) {
+		
+		String theMessage = checkCaps ("Still Water Runs Deep");
+		System.out.println(theMessage);
+		
+		
+	}
+
+
+
+
+public static String checkCaps (String s){
+	return s.toUpperCase();
+}
+
+
+}
